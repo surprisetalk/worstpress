@@ -30,5 +30,12 @@ http-server dist
 
 ```bash
 brew install watch
+watch -t -n 0.5 ./build.sh
+```
+
+Alternatively, rebuild only on file change:
+
+```bash
+npm install --global watch-cli
 watch -p "*.html" -p "src/*" -c "./build.sh"
 ```
